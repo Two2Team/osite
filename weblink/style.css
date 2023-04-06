@@ -1,0 +1,56 @@
+
+html {
+  height: 75%;
+  width: 90%;
+  text-align: center;
+  padding:5%;
+  color: #33000f;
+  background:#ffffff;
+  font-family: Montserrat,arial;
+  font-size: 190%;
+}
+
+body {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.link {
+  color: #fc780e;
+  font-weight: bold;
+  text-decoration: none ;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color:#fc780e; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.img {
+  border-radius: 8%;
+}
+
